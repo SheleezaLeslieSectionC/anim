@@ -1,0 +1,91 @@
+* {
+    color: #1b2536 !important;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: rgb(179, 203, 243) !important;
+}
+
+header a {
+    font-weight: 600;
+}
+
+.card-img-top {
+    height: 40vh;
+}
+
+a:hover {
+    color: #e64855 !important;
+}
+
+.btn {
+    color: rgb(255, 255, 255) !important;
+}
+
+#hero-carousel {
+    background-color: #fff;
+}
+
+.carousel .hero-img {
+    width: 750px;
+    height: 400px;
+}
+
+/* zoom animation for features section */
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+/* pseudo loading screen animation */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-bottom: 8px;
+}
+
+.loader:before {
+    content: "Loading..."
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: white;
+    display: grid;
+    place-items: center;
+    animation: 1.5s linear loading-overlay-dismiss;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading-overlay-dismiss {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.wrapper {
+    background-color: #fff
+}
+
+.reviews {
+    background-color: rgb(179, 203, 243) !important;
+}
